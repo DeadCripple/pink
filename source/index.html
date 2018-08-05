@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8"> 
+    <title>Пинк</title>
+      <link href="css/style.min.css" rel="stylesheet">
+  </head>
+  <body class="index">
+    <header class="header">
+      <div class="header__logo-block logo">
+        <a class="logo__link" href="">
+          <h1 сlass="visually-hidden">Пинк</h1>
+        </a>
+        <button class="main-nav__toggle">Меню</button>
+      </div>
+      <nav class="main-nav">
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a class="main-nav__link main-nav__link--active">Главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фотографии</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="form.html">Конкурс</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru">HTML Academy</a></li>
+        </ul>
+      </nav>
+      <section class="intro">
+        <img class="intro__image" src="img/phone-in-hand.png">
+        <div class="intro__application">
+          <a class="intro__button button" href="">Скачать приложение</a>
+          <div class="intro__platforms platforms-items">
+            <a class="platforms-items__item platforms-items__item--iphone" href="">IPhone</a>
+            <a class="platforms-items__item platforms-items__item--android" href="">Android</a>
+            <a class="platforms-items__item platforms-items__item--windows" href="">Windows</a>
+            <p class="platforms-items__desc">
+              Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+            </p>
+          </div>
+        </div>
+      </section>
+    </header>
+    
+    <main class="main">
+      <section class="promo">
+        <div class="promo__heading">
+          <p class="promo__header header">Устали от серости мегаполиса?</p>
+          <p class="promo__header header">Нам есть что вам предложить!</p>
+        </div>
+        <div class="promo__features">
+          <div class="promo__item">
+            <b class="promo__titling">Поднимает настроение</b>
+            <p class="promo__desk">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+          </div>
+          <div class="promo__item">
+            <b class="promo__titling">Меняет мир вокруг</b>
+            <p class="promo__desk">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+          </div>
+          <div class="promo__item">
+            <b class="promo__titling">Заводит новых друзей</b>
+            <p class="promo__desk">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+          </div>
+        </div>
+      </section>
+      <section class="reivew slider">
+        <blockquote class="reivew__item slide">
+          <cite class="reivew__autor">Николай Петров</cite>
+          <p class="reivew__comment text">
+            «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+          </p>
+        </blockquote>
+        <div class="reivew__radio-buttons slider__radio-buttons">
+          <button class="slider__radio-button slider__radio-button--active" type="button">1</button>
+          <button class="slider__radio-button"  type="button">2</button>
+          <button class="slider__radio-button"  type="button">3</button>
+        </div>
+      </section>
+      <section class="price slider">
+        <table class="price__list slide">
+          <tr>
+            <td><span class="price__version">Стандарт</span><br>
+            <span class="price__value">3,99 USD</span>
+            <div class="price__flag price__flag-new"></div>
+            </td>
+          </tr>
+          <tr>
+            <td><span class="price__option">Розовый фильтр</span><div class="price__check-mark price__check-mark--cheked"></div></td>
+          </tr>
+          <tr>
+            <td><span class="price__option">Смайлики</span><div class="price__check-mark price__check-mark--cheked"></div></td>
+          </tr>
+          <tr>
+            <td><span class="price__option">Комментарии</span><div class="price__check-mark price__check-mark--uncheked"></div></td>
+          </tr>
+        </table>
+        <div class="price__radio-buttons slider__radio-buttons">
+          <button class="slider__radio-button">1</button>
+          <button class="slider__radio-button slider__radio-button--active">2</button>
+          <button class="slider__radio-button">3</button>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <section class="contacts">
+        <p class="contacts__header header">
+          Остались вопросы?<br> 
+          Свяжитесь с нами!
+        </p>
+        <div class="contacts_item">
+          <span class="contacts__title">Звоните:</span>
+          <a class="contacts__phone" href="tel :+7 (812) 555-66-66">+7 (812) 555-66-66</a>
+        </div>
+        <div class="contacts_item">
+         <span class="contacts__title">Пишите:</span>
+          <a class="contacts_email" href="mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+        </div>
+        <div class="contacts_item">
+         <span class="contacts__title">Приезжайте в гости:</span>
+          <span class="contacts_address">ул. Большая Конюшенная, 19/8</span>
+        </div>
+        <article class="map"></article>
+      </section>
+    </footer>
+  </body>
+</html>
