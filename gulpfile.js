@@ -34,7 +34,7 @@ gulp.task("copy", function() {
 
 // CSS
 gulp.task("style", function(){ 
-       return gulp.src("source/sass/style.sccs")
+       return gulp.src("source/sass/style.scss")
         .pipe(plumber())
         .pipe(sass())
         .pipe(postcss([
@@ -91,7 +91,7 @@ gulp.task("serve", function() {
       server: "build"
 });
 
-gulp.watch("source/sass/**/*.sccs", ["style"]);
+gulp.watch("source/sass/**/*.scss", ["style"]);
 gulp.watch("source/*.html", ["html:update"]);
 });
 

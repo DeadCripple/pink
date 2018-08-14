@@ -1,8 +1,8 @@
 {
   "name": "pink",
   "version": "1.0.0",
+  "private": true,
   "scripts": {
-    "test": "editorconfig-cli",
     "build": "gulp build",
     "start": "npm run build && gulp serve"
   },
@@ -16,7 +16,6 @@
   },
   "homepage": "https://github.com/DeadCripple/pink#readme",
   "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "^1.0.0",
     "autoprefixer": "^9.0.2",
     "browser-sync": "^2.26.3",
     "del": "^3.0.0",
@@ -31,5 +30,14 @@
     "gulp-svgstore": "^6.1.1",
     "posthtml-include": "^1.2.0",
     "run-sequence": "^2.2.1"
-  }
+  },
+  "editorconfig-cli": [
+    "source/*.html",
+    "*.json",
+    "source/*.js",
+    "source/js/**/*.js",
+    "source/img/**/*.svg",
+    "source/sass/**/*.{sass,scss}"
+  ],
+  "dependencies": {}
 }
