@@ -1,0 +1,9 @@
+.header {
+  background: no-repeat center url(../../img/bg-mobile@1x.jpg);
+  background-color: $blue-2;
+}
+
+.header__title {
+  @include visually-hidden;
+}
+
