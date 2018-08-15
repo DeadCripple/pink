@@ -36,7 +36,9 @@ gulp.task("copy", function() {
 gulp.task("style", function(){ 
        return gulp.src("source/sass/style.scss")
         .pipe(plumber())
-        .pipe(sass())
+        .pipe(sass({
+          includePaths: require("node-normalize-scss").includePaths
+        }))
         .pipe(postcss([
           autoprefixer() 
         ]))
@@ -44,7 +46,7 @@ gulp.task("style", function(){
         .pipe(csso())
         .pipe(rename("style.min.css"))
         .pipe(gulp.dest("build/css"))
-        .pipe(server.stream()); 
+        .pipe(server.stream());
 });
 
 
