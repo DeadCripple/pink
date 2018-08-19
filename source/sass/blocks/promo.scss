@@ -2,6 +2,25 @@
   background-color: $white;
 }
 
+.promo__header {
+  @include big-ttl-font;
+  color: $main-color;
+}
+
+.promo__titling {
+  @include ttl-font;
+  color: $black;
+}
+
+.promo__desk {
+  @include main-font;
+  color: $main-color;
+}
+
 .promo__features {
   background-color: $gray;
+}
+
+.promo__img {
+  display: block;
 }

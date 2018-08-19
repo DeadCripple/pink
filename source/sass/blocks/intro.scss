@@ -1,0 +1,14 @@
+.intro__button {
+  color: $white;
+  border-color: $white;
+}
+
+.intro__image {
+  display: block;
+}
+
+.intro__header {
+  @include big-ttl-font;
+  color: $white;
+  text-align: center;
+}

@@ -1,10 +1,36 @@
 @mixin visually-hidden {
-	position: absolute !important;
-	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-	clip: rect(1px, 1px, 1px, 1px);
-	padding:0 !important;
-	border:0 !important;
-	height: 1px !important; 
-	width: 1px !important; 
-	overflow: hidden;
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+@mixin ttl-font {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+@mixin big-ttl-font {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+@mixin main-font {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+@mixin link-reset {
+  text-decoration: none;
+}
+
+@mixin form-main-font {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
 }

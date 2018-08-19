@@ -1,0 +1,64 @@
+.contest-form__input-name {
+  @include form-main-font;
+  color: $pink;
+  text-transform: uppercase;
+}
+
+.contest-form__titling {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $pink;
+}
+
+.contest-form__achievements {
+  background-color: $gray;
+}
+
+.contest-form__checkbox-name {
+  @include form-main-font;
+  color: $main-color;
+}
+
+.contest-form__radio-name {
+  @include form-main-font;
+  color: $main-color;
+}
+
+.contest-form__comment {
+  @include form-main-font;
+  color: $pink;
+  text-transform: uppercase;
+}
+
+.contest-form__text {
+  border: 2px solid $gray;
+    &::placeholder {
+      @include form-main-font;
+      color: $main-color;
+}
+}
+
+.contest-form__submit {
+  display: block;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: none;
+  border-radius: 3px;
+  background-color: #2aab6d;
+  cursor: pointer;
+  @include form-main-font;
+  text-transform: uppercase;
+  color: $white;
+}
+
+.contest-form__legend {
+  font-size: 14px;
+  line-height: 30px;
+  color: $main-color;
+}
+
+.contest-form__star {
+  color: $pink;
+}
