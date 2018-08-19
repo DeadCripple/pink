@@ -1,0 +1,42 @@
+.photo-block__caption-text {
+  display: block;
+  width: 140px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  background-color: $pink;
+  text-align: center;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $white;
+}
+
+.photo-block__comment {
+  background-color: $gray;
+}
+
+.photo-block__username {
+  @include main-font;
+  font-weight: 700;
+  color: $main-color;
+}
+
+.photo-block__post-time {
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 300;
+  color: $main-color;
+}
+
+.photo-block__post {
+  @include main-font;
+  color: $main-color;
+}
+
+.photo-block__like-text {
+  font-size: 12px;
+  line-height: 24px;
+  color: $pink;
+  font-weight: 400;
+}

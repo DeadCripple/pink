@@ -1,3 +1,28 @@
 .price {
   background-color: $gray;
 }
+
+.price__version {
+  @include ttl-font;
+  color: $white;
+  text-transform: uppercase;
+}
+
+.price__value {
+  @include big-ttl-font;
+  color: $white;
+}
+
+.price__version-block {
+  background-color: $main-color;
+}
+
+.price__option {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: $main-color;
+}
+
+.price__option-block {
+  background-color: $white;
+}

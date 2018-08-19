@@ -1,5 +1,5 @@
 'use strict';
- 
+
 var gulp = require("gulp");
 var sass = require("gulp-sass");
 var plumber = require("gulp-plumber");
@@ -15,105 +15,113 @@ var include = require('posthtml-include');
 var run = require("run-sequence"); // Позволяет ассинхронно запускать таски
 const del = require('del');
 
-gulp.task("clean", function() {
-         return del("build");
+gulp.task("clean", function () {
+  return del("build");
 });
 
-gulp.task("copy", function() {
-         return gulp.src([
+gulp.task("copy", function () {
+  return gulp.src([
           "source/fonts/**/*.{woff,woff2}",
           "source/img/**",
           "source/js/**",
           "source/*.html"
      ], {
-       base: "source"
-     })
-     .pipe(gulp.dest("build"));
+      base: "source"
+    })
+    .pipe(gulp.dest("build"));
 });
- 
+
 
 // CSS
-gulp.task("style", function(){ 
-       return gulp.src("source/sass/style.scss")
-        .pipe(plumber())
-        .pipe(sass({
-          includePaths: require("node-normalize-scss").includePaths
-        }))
-        .pipe(postcss([
-          autoprefixer() 
+gulp.task("style", function () {
+  return gulp.src("source/sass/style.scss")
+    .pipe(plumber())
+    .pipe(sass({
+      includePaths: require("node-normalize-scss").includePaths
+    }))
+    .pipe(postcss([
+          autoprefixer()
         ]))
-        .pipe(gulp.dest("build/css"))
-        .pipe(csso())
-        .pipe(rename("style.min.css"))
-        .pipe(gulp.dest("build/css"))
-        .pipe(server.stream());
+    .pipe(gulp.dest("build/css"))
+    .pipe(csso())
+    .pipe(rename("style.min.css"))
+    .pipe(gulp.dest("build/css"))
+    .pipe(server.stream());
 });
 
 
 // IMAGES
-gulp.task("images", function() {
+gulp.task("images", function () {
   return gulp.src("source/img/**/*.{png,jpg,gif,svg}")
     .pipe(imagemin([
-        imagemin.optipng({optimizationLevel: 3}),
-        imagemin.jpegtran({progressive: true}),
+        imagemin.optipng({
+        optimizationLevel: 3
+      }),
+        imagemin.jpegtran({
+        progressive: true
+      }),
         imagemin.svgo({
         plugins: [
-            {removeViewBox: true},
-            {cleanupIDs: false}
+          {
+            removeViewBox: true
+          },
+          {
+            cleanupIDs: false
+          }
         ]
-    })
+      })
       ]))
     .pipe(gulp.dest("build/img"));
 });
 
 
 // SVG SPRITE
-gulp.task("sprite", function(){ 
-      return gulp.src("source/img/icon-*.svg")
-      .pipe(svgstore({
+gulp.task("sprite", function () {
+  return gulp.src("source/img/icon-*.svg")
+    .pipe(svgstore({
       inlineSvg: true
-}))
-      .pipe(rename("sprite.svg"))
-      .pipe(gulp.dest("build/img"));
+    }))
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("build/img"));
 });
 
 // SVG INCLUDE IN HTML
-gulp.task("html", function(){
-      return gulp.src("source/*.html")
-      .pipe(posthtml([
+gulp.task("html", function () {
+  return gulp.src("source/*.html")
+    .pipe(posthtml([
         include()
 ]))
-      .pipe(gulp.dest("build"));
+    .pipe(gulp.dest("build"));
 });
 
 
 // LOCAL SERVER
-gulp.task("serve", function() {
-      server.init({
-      server: "build"
+gulp.task("serve", function () {
+  server.init({
+    server: "build"
+  });
+
+  gulp.watch("source/sass/**/*.scss", ["style"]);
+  gulp.watch("source/*.html", ["html:update"]);
 });
 
-gulp.watch("source/sass/**/*.scss", ["style"]);
-gulp.watch("source/*.html", ["html:update"]);
+gulp.task("html:copy", function () {
+  return gulp.src("source/*.html")
+    .pipe(gulp.dest("build"));
 });
 
-gulp.task("html:copy", function() {
-      return gulp.src("source/*.html")
-      .pipe(gulp.dest("build"));
-});
-
-gulp.task("html:update", ["html:copy"], function(done) {
-      server.reload();
-      done();
+gulp.task("html:update", ["html:copy"], function (done) {
+  server.reload();
+  done();
 });
 
 // Ассинхронный запуск
- gulp.task("build", function(done) {
-      run("clean",
-          "copy",
-          "style",
-          "sprite",
-          "html",
-          done
-        );
- });
+gulp.task("build", function (done) {
+  run("clean",
+    "copy",
+    "style",
+    "sprite",
+    "html",
+    done
+  );
+});

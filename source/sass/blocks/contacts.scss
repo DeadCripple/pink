@@ -1,0 +1,22 @@
+.contacts {
+  background-color: $white;
+}
+
+.contacts__header {
+  @include big-ttl-font;
+  color: $main-color;
+}
+
+.contacts__title {
+  display: block;
+  @include ttl-font;
+  color: $main-color;
+}
+
+.contacts__phone,
+.contacts__email,
+.contacts__address {
+  @include big-ttl-font;
+  color: $pink;
+  text-decoration: none;
+}

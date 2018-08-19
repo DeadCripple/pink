@@ -4,13 +4,14 @@
 <head>
   <meta charset="utf-8">
   <title>Пинк: Конкурс</title>
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="form">
   <header class="header">
+    <h1 class="header__title">Пинк</h1>
     <div class="header__logo-block logo">
       <a class="logo__link" href="index.html">
-        <h1 сlass="visually-hidden">Пинк</h1>
       </a>
       <button class="main-nav__toggle">Меню</button>
     </div>
@@ -23,12 +24,12 @@
       </ul>
     </nav>
     <section class="intro">
-      <h2 class="intro__header header">Конкурс на самое безбашенное путешествие с Пинк</h2>
+      <h2 class="intro__header">Конкурс на самое безбашенное путешествие с Пинк</h2>
     </section>
   </header>
 
-  <main class="main main--inner">
-    <p class="form__head-block head-block">
+  <main class="main main__inner">
+    <p class="contest-form__title-block title-block">
       Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:
     </p>
     <form class="contest-form" action="" method="post">
@@ -85,11 +86,11 @@
       </div>
       <div class="contest-form__comment">
         <label for="comment">Опишите свои эмоции</label><br>
-        <textarea id="comment" cols="25" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+        <textarea class="contest-form__text" id="comment" cols="25" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
       </div>
       <button class="contest-form__submit" type="submit">Отправить форму</button>
       <small class="contest-form__legend">
-          <sup class="contest-form__sup">*</sup> — обязательные поля
+          <sup class="contest-form__star">*</sup> — обязательные поля
         </small>
     </form>
   </main>
