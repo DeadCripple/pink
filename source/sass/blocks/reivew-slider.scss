@@ -1,0 +1,34 @@
+.reivew-slider {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  background-color: $white;
+  text-align: center;
+}
+
+.reivew-slider__slide {
+  margin: 0;
+}
+
+.reivew-slider__autor {
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  @include ttl-font;
+  line-height: 30px;
+  font-style: normal;
+  color: $black;
+}
+
+.reivew-slider__comment {
+  margin: 0px 0px;
+  font-size: 14px;
+  line-height: 30px;
+  color: $main-color;
+}
+
+.reivew-slider__radio-buttons {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}

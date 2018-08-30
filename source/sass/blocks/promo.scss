@@ -1,15 +1,25 @@
+.promo {
+  display: flex;
+  flex-direction: column;
+  min-height: 750px;
+  text-align: center;
+  align-items: center;
+  width: 320px;
+  margin: 0 auto;
+  background-color: $gray;
+}
+
 .promo__heading {
   background-color: $white;
+  text-align: center;
 }
 
 .promo__header {
+  margin-top: 40px;
+  margin-bottom: 40px;
   @include big-ttl-font;
   color: $main-color;
-}
-
-.promo__titling {
-  @include ttl-font;
-  color: $black;
+  text-align: center;
 }
 
 .promo__desk {
@@ -18,9 +28,24 @@
 }
 
 .promo__features {
-  background-color: $gray;
+  display: flex;
+  flex-direction: column;
+}
+
+.promo__titling {
+  margin-top: 35px;
+  margin-bottom: 20px;
+  display: block;
+  @include ttl-font;
+  color: $black;
 }
 
 .promo__img {
-  display: block;
+  width: 157px;
+  margin-bottom: -40px;
+}
+
+.promo__desk {
+  margin: 0px;
+  margin-bottom: 20px;
 }

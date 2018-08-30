@@ -1,6 +1,17 @@
 .header {
-  background: no-repeat center url(../img/bg-mobile@1x.jpg);
-  background-color: $main-color;
+  position: relative;
+}
+
+.header__wrapper {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 66px;
+  background-color: $black-30;
 }
 
 .header__title {

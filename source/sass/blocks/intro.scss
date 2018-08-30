@@ -1,10 +1,32 @@
+.intro {
+  position: relative;
+  z-index: 9;
+  display: flex;
+  min-height: 735px;
+  flex-direction: column;
+  align-items: center;
+  background: no-repeat url(../img/bg-mobile@1x.jpg);
+  background-color: $blue;
+}
+
+.intro__application {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .intro__button {
+  width: 100%;
+  margin-top: 485px;
+  margin-bottom: 30px;
   color: $white;
   border-color: $white;
 }
 
 .intro__image {
-  display: block;
+  z-index: 8;
+  position: absolute;
+  top: 148px;
 }
 
 .intro__header {

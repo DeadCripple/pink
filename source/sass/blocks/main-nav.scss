@@ -1,7 +1,22 @@
+.main-nav {
+  display: none;
+}
+
+.main-nav__toggle {
+  min-height: 66px;
+  min-width: 70px;
+  text-indent: -99999px;
+  background-image: url("../img/sprite.svg");
+  background-color: transparent;
+    &:hover {
+      cursor: pointer;
+    }
+}
+
 .main-nav__list {
   display: flex;
   flex-direction: column;
-  list-style: none;
+  @include list-reset;
 }
 
 .main-nav__link {

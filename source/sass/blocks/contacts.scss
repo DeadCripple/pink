@@ -1,14 +1,23 @@
 .contacts {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
   background-color: $white;
 }
 
 .contacts__header {
   @include big-ttl-font;
   color: $main-color;
+  margin: 40px 0;
+}
+
+.contacts__item {
+  margin-bottom: 25px;
 }
 
 .contacts__title {
   display: block;
+  margin-bottom: 5px;
   @include ttl-font;
   color: $main-color;
 }
