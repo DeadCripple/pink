@@ -1,19 +1,23 @@
-platforms-items {
+.platforms-items {
   display: flex;
+  min-height: 56px;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .platforms-items__item {
-  height: 50px;
+  height: 56px;
   width: 55px;
   background: url("../img/sprite.svg");
+  background-position: 0px 0px;
+  border: 1px solid gray;
+  text-indent: -99999px;
 }
 
 .platforms-items__desc {
   @include main-font;
   font-weight: 300;
   color: $white;
-}
-
-.platforms-items__item--iphone {
-  
+  width: 280px;
+  text-align: center;
 }

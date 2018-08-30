@@ -1,5 +1,15 @@
 .price {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   background-color: $gray;
+  min-height: 470px;
+}
+
+.price__list {
+  width: 100%;
+  border: 2px solid $gray;
+  min-height: 270px;
 }
 
 .price__version {
@@ -25,4 +35,9 @@
 
 .price__option-block {
   background-color: $white;
+}
+
+.price__radio-buttons {
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
