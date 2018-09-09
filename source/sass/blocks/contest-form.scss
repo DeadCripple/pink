@@ -1,47 +1,131 @@
+.contest-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contest-form__title-block {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 30px;
+  color: $main-color;
+  text-align: center;
+}
+
+.contest-form__plea {
+  display: none;
+}
+
+.contest-form__name-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.contest-form__input {
+  padding: 20px;
+  margin-bottom: 5px;
+  border: 2px solid $gray;
+}
+
+.contest-form__input:last-child {
+  margin-bottom: 42px;
+}
+
 .contest-form__input-name {
-  @include form-main-font;
+  margin: 10px 22px;
+  font-size: 14px;
+  line-height: 30px;
   color: $pink;
   text-transform: uppercase;
 }
 
 .contest-form__titling {
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0px 15px;
   font-size: 14px;
   line-height: 18px;
+  text-align: center;
   text-transform: uppercase;
   color: $pink;
 }
 
 .contest-form__achievements {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 -20px;
+  margin-bottom: 10px;
+  padding: 35px 20px 42px;
   background-color: $gray;
 }
 
+.contest-form__contacts {
+  display: flex;
+  flex-direction: column;
+}
+
 .contest-form__checkbox-name {
+  margin-bottom: 55px;
+  padding-left: 55px;
   @include form-main-font;
   color: $main-color;
+  &:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+.contest-form__apps {
+  display: flex;
+  flex-direction: column;
+  margin: 0 -20px;
+  margin-bottom: 50px;
+  padding: 20px 20px;
+  background-color: $gray;
+}
+
+.contest-form__apps-titling {
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $pink;
 }
 
 .contest-form__radio-name {
+  margin: 20px 0;
+  padding-left: 60px;
   @include form-main-font;
   color: $main-color;
 }
 
 .contest-form__comment {
+  display: flex;
+  flex-direction: column;
   @include form-main-font;
   color: $pink;
   text-transform: uppercase;
 }
 
 .contest-form__text {
+  height: 160px;
   border: 2px solid $gray;
-    &::placeholder {
-      @include form-main-font;
-      color: $main-color;
-}
+  margin-top: -35px;
+  margin-bottom: 50px;
+  padding: 18px;
+
+  &::placeholder {
+    @include form-main-font;
+    color: $main-color;
+  }
 }
 
 .contest-form__submit {
   display: block;
   width: 100%;
+  margin-bottom: 40px;
   padding-top: 15px;
   padding-bottom: 15px;
   border: none;
@@ -56,6 +140,8 @@
 .contest-form__legend {
   font-size: 14px;
   line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
   color: $main-color;
 }
 

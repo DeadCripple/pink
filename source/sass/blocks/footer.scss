@@ -1,0 +1,24 @@
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+.footer__logo {
+  display: block;
+  width: 147px;
+  height: 40px;
+  margin-top: 55px;
+  margin-bottom: 40px;
+  border: 1px solid $gray;
+}
+
+.footer__social {
+  margin-bottom: 45px;
+}
+
+.footer__copyright {
+  margin-bottom: 40px;
+}
