@@ -1,0 +1,19 @@
+.head-block__wrapper {
+  display: flex;
+  width: 100%;
+  min-height: 240px;
+  margin: 0 -20px;
+  padding: 0 20px;
+  flex-direction: column;
+  background-color: $main-color;
+  background-image: url("../img/bg-mobile@1x.jpg");
+  background-position: 50% 0%;
+}
+
+.head-block__title {
+  margin: auto;
+  margin-bottom: 60px;
+  @include big-ttl-font;
+  color: $white;
+  text-align: center;
+}

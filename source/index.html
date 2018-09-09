@@ -11,7 +11,7 @@
   <header class="header container">
     <div class="header__wrapper container">
     <h1 class="header__title">Пинк</h1>
-      <a class="header__logo logo" href="">
+      <a class="header__logo" href="">
         <include src="build/img/logo-mobile.svg"></include>
       </a>
       <button class="main-nav__toggle">Меню</button>
@@ -29,17 +29,20 @@
   <main class="main">
     <section class="intro container">
           <img class="intro__image" src="img/phone-in-hand.png" width="320px" height="314px">
-          <div class="intro__application">
-            <a class="intro__button button" href="">Скачать приложение</a>
-            <div class="intro__platforms platforms-items">
-              <a class="platforms-items__item platforms-items__item--iphone" href="">IPhone</a>
-              <a class="platforms-items__item platforms-items__item--android" href="">Android</a>
-              <a class="platforms-items__item platforms-items__item--windows" href="">Windows</a>
+          <div class="intro__wrapper">
+            <div class="intro__application container">
+              <a class="intro__button button" href="">Скачать приложение</a>
+              <div class="intro__platforms platforms-items">
+                <a class="platforms-items__item platforms-items__item--iphone" href="">IPhone</a>
+                <a class="platforms-items__item platforms-items__item--android" href="">Android</a>
+                <a class="platforms-items__item platforms-items__item--windows" href="">Windows</a>
+              </div>
+              <p class="platforms-items__desc">
+                Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+              </p>
             </div>
-            <p class="platforms-items__desc">
-              Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-            </p>
           </div>
+
     </section>
     <section class="promo">
       <div class="promo__heading container">

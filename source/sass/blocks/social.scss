@@ -1,0 +1,19 @@
+.social {
+  width: 180px;
+}
+
+.social_list {
+  display: flex;
+  justify-content: space-between;
+  width: 180px;
+  align-items: center;
+  @include list-reset;
+}
+
+.social__item {
+  width: 45px;
+  height: 45px;
+  border: 3px solid $blue-10;
+  border-radius: 50%;
+  text-indent: -9999px;
+}

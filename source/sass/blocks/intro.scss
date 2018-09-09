@@ -1,11 +1,17 @@
 .intro {
   position: relative;
-  z-index: 9;
   display: flex;
-  min-height: 735px;
   flex-direction: column;
+  min-height: 730px;
   align-items: center;
-  background: no-repeat url(../img/bg-mobile@1x.jpg);
+  background-color: $blue;
+  background: no-repeat url("../img/bg-mobile@1x.jpg");
+}
+
+.intro__wrapper {
+  z-index: 9;
+  min-height: 270px;
+  margin-top: auto;
   background-color: $blue;
 }
 
@@ -17,7 +23,7 @@
 
 .intro__button {
   width: 100%;
-  margin-top: 485px;
+  margin-top: 30px;
   margin-bottom: 30px;
   color: $white;
   border-color: $white;
@@ -26,7 +32,7 @@
 .intro__image {
   z-index: 8;
   position: absolute;
-  top: 148px;
+  top: 175px;
 }
 
 .intro__header {
