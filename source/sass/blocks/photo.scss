@@ -1,9 +1,39 @@
+.photo-block {
+  width: 100%;
+}
+
+.photo__wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  margin-bottom: 23px;
+  background-color: $gray;
+}
+
+.photo-block--best {
+  position: relative;
+}
+
+.photo-block__full-size {
+  display: block;
+  margin: 0 -20px;
+  line-height: 0;
+}
+
+.photo-block__full-size--best {
+  margin: 0 -40px;
+}
+
 .photo-block__caption-text {
+  position: absolute;
+  top: 0;
+  right: -20px;
   display: block;
   width: 140px;
   padding-top: 6px;
   padding-bottom: 6px;
   background-color: $pink;
+  cursor: default;
   text-align: center;
   font-size: 12px;
   line-height: 24px;
@@ -12,11 +42,9 @@
   color: $white;
 }
 
-.photo-block__comment {
-  background-color: $gray;
-}
-
 .photo-block__username {
+  margin-top: 20px;
+  margin-bottom: 0px;
   @include main-font;
   font-weight: 700;
   color: $main-color;
@@ -30,13 +58,22 @@
 }
 
 .photo-block__post {
+  margin: 0;
+}
+
+.photo-block__post {
   @include main-font;
   color: $main-color;
 }
 
 .photo-block__like-text {
+  margin-left: 10px;
   font-size: 12px;
   line-height: 24px;
   color: $pink;
   font-weight: 400;
+}
+
+.photo-block__likes {
+  margin-bottom: 25px;
 }

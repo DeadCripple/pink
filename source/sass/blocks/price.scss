@@ -1,14 +1,16 @@
 .price {
+  margin: 0 auto;
+  background-color: $gray;
+}
+
+.price__wrapper {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  background-color: $gray;
   min-height: 470px;
 }
 
 .price__list {
-  width: 100%;
-  border: 2px solid $gray;
   min-height: 270px;
 }
 

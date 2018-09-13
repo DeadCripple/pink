@@ -3,10 +3,9 @@
 }
 
 .main-nav__toggle {
+  border: 0;
   min-height: 66px;
   min-width: 70px;
-  text-indent: -99999px;
-  background-image: url("../img/sprite.svg");
   background-color: transparent;
     &:hover {
       cursor: pointer;

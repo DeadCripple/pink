@@ -21,11 +21,11 @@ gulp.task("clean", function () {
 
 gulp.task("copy", function () {
   return gulp.src([
-          "source/fonts/**/*.{woff,woff2}",
-          "source/img/**",
-          "source/js/**",
-          "source/*.html"
-     ], {
+      "source/fonts/**/*.{woff,woff2}",
+      "source/img/**",
+      "source/js/**",
+      "source/*.html"
+    ], {
       base: "source"
     })
     .pipe(gulp.dest("build"));
@@ -40,8 +40,8 @@ gulp.task("style", function () {
       includePaths: require("node-normalize-scss").includePaths
     }))
     .pipe(postcss([
-          autoprefixer()
-        ]))
+      autoprefixer()
+    ]))
     .pipe(gulp.dest("build/css"))
     .pipe(csso())
     .pipe(rename("style.min.css"))
@@ -54,15 +54,14 @@ gulp.task("style", function () {
 gulp.task("images", function () {
   return gulp.src("source/img/**/*.{png,jpg,gif,svg}")
     .pipe(imagemin([
-        imagemin.optipng({
+      imagemin.optipng({
         optimizationLevel: 3
       }),
-        imagemin.jpegtran({
+      imagemin.jpegtran({
         progressive: true
       }),
-        imagemin.svgo({
-        plugins: [
-          {
+      imagemin.svgo({
+        plugins: [{
             removeViewBox: true
           },
           {
@@ -70,7 +69,7 @@ gulp.task("images", function () {
           }
         ]
       })
-      ]))
+    ]))
     .pipe(gulp.dest("build/img"));
 });
 
@@ -89,8 +88,8 @@ gulp.task("sprite", function () {
 gulp.task("html", function () {
   return gulp.src("source/*.html")
     .pipe(posthtml([
-        include()
-]))
+      include()
+    ]))
     .pipe(gulp.dest("build"));
 });
 
@@ -120,6 +119,7 @@ gulp.task("build", function (done) {
   run("clean",
     "copy",
     "style",
+    "images",
     "sprite",
     "html",
     done

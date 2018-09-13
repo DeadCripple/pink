@@ -4,6 +4,7 @@
 }
 
 .header__wrapper {
+  position: relative;
   z-index: 10;
   width: 100%;
   margin: 0 -20px;
@@ -24,6 +25,5 @@
   display: block;
   width: 150px;
   min-height: 22px;
-  border: 1px solid $gray;
 }
 
