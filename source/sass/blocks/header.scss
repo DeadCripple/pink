@@ -1,19 +1,12 @@
-.header {
-  display: flex;
-  align-items: center;
-}
-
 .header__wrapper {
-  position: relative;
+  position: absolute;
   z-index: 10;
+  box-sizing: border-box;
   width: 100%;
-  margin: 0 -20px;
-  margin-bottom: -66px;
   padding: 0 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 66px;
   background-color: $black-30;
 }
 
@@ -24,6 +17,6 @@
 .header__logo {
   display: block;
   width: 150px;
-  min-height: 22px;
+  min-height: 25px;
 }
 
