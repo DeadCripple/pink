@@ -2,12 +2,15 @@
   position: relative;
   z-index: 9;
   display: flex;
+  width: auto;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
   min-height: 732px;
   margin: 0 -20px;
-  background: no-repeat url("../img/bg-mobile@1x.jpg");
+  background: no-repeat center url("../img/bg-back-mobile@2x.jpg");
+  background-position: 50% 23%;
+  background-size: 1850px auto;
   background-color: $blue;
 }
 
