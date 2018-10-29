@@ -1,13 +1,16 @@
 .price {
-  margin: 0 auto;
+  padding-top: 200px;
+  background-image: url(../img/bg-triangle-white.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
   background-color: $gray;
+
 }
 
 .price__wrapper {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  min-height: 470px;
 }
 
 .price__list {

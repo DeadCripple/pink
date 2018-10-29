@@ -1,13 +1,9 @@
 .intro__wrapper {
-  position: relative;
-  z-index: 9;
   display: flex;
   width: auto;
   flex-direction: column;
-  justify-content: flex-end;
   align-items: center;
-  min-height: 732px;
-  margin: 0 -20px;
+  padding-top: 137px;
   background: no-repeat center url("../img/bg-back-mobile@2x.jpg");
   background-position: 50% 23%;
   background-size: 1850px auto;
@@ -31,22 +27,62 @@
 }
 
 .intro__application {
+  box-sizing: border-box;
+  width: 100%;
   display: flex;
   z-index: 10;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   padding: 0 20px;
   background-color: $blue;
 }
 
+.intro__titling {
+  display: none;
+  color: white;
+  font-size: 40px;
+  font-weight: 300;
+  width: 210px;
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
+.intro__image-block {
+  margin-right: auto;
+}
+
 .intro__image {
-  z-index: 8;
-  position: absolute;
-  top: 175px;
+  display: block;
 }
 
 .intro__header {
   @include big-ttl-font;
   color: $white;
   text-align: center;
+}
+
+
+@media (min-width: $tablet-width) {
+  .intro__wrapper {
+    position: relative;
+    flex-direction: row;
+    padding-bottom: 95px;
+  }
+
+  .intro__image-block {
+    order: 2;
+    position: absolute;
+    left: 230px;
+  }
+
+  .intro__application {
+    order: 1;
+    width: 300px;
+    background-color: transparent;
+  }
+
+  .intro__titling {
+    display: block;
+  }
 }
