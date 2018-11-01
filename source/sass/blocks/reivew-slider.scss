@@ -1,8 +1,7 @@
 .reivew-slider__wrapper {
-  position: relative;
-  z-index: 10;
   display: flex;
   flex-direction: column;
+  padding: 0 20px;
   background-color: $white;
   text-align: center;
 }
