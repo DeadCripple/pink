@@ -1,13 +1,13 @@
 .reivew-slider__wrapper {
-  display: flex;
-  flex-direction: column;
   padding: 0 20px;
   background-color: $white;
-  text-align: center;
 }
 
 .reivew-slider__slide {
+  display: flex;
+  flex-direction: column;
   margin: 0;
+  align-items: center;
 }
 
 .reivew-slider__autor {
@@ -25,9 +25,33 @@
   font-size: 14px;
   line-height: 30px;
   color: $main-color;
+  text-align: center;
+}
+
+.reivew-slider__caption {
+  display: none;
+  font-size: 14px;
+  line-height: 30px;
+  color: #303946;
 }
 
 .reivew-slider__radio-buttons {
   margin-top: 40px;
   margin-bottom: 40px;
+}
+
+@media (min-width: $tablet-width) {
+  .reivew-slider__caption {
+    display: block;
+    order: 3;
+  }
+
+  .reivew-slider__comment {
+    order: 1;
+    font-size: 18px;
+  }
+
+  .reivew-slider__autor {
+    order: 2;
+  }
 }
