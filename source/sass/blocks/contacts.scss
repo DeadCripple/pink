@@ -1,8 +1,15 @@
 .contacts {
   display: flex;
   flex-direction: column;
+  padding: 0 20px;
   text-align: center;
   background-color: $white;
+}
+
+.contacts__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contacts__header {
@@ -13,6 +20,8 @@
 
 .contacts__item {
   margin-bottom: 25px;
+  width: 270px;
+  padding-right: 30px;
 }
 
 .contacts__title {
@@ -28,4 +37,14 @@
   @include big-ttl-font;
   color: $pink;
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: $white;
+  }
 }
