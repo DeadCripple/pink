@@ -1,0 +1,13 @@
+.map-footer {
+  height: 200px;
+  background: no-repeat center url(../img/footer-map@x1.jpg);
+  background-size: 100% auto;
+}
+
+@media (min-width: $tablet-width) {
+  .map-footer {
+    height: 380px;
+    background: no-repeat center url(../img/footer-map@x2.jpg);
+    background-size: 100% auto;
+  }
+}
