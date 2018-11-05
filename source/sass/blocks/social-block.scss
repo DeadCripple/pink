@@ -1,8 +1,4 @@
-.social {
-  width: 180px;
-}
-
-.social_list {
+.social-block {
   display: flex;
   justify-content: space-between;
   width: 180px;
@@ -10,7 +6,7 @@
   @include list-reset;
 }
 
-.social__item {
+.social-block__item {
   width: 45px;
   height: 45px;
   border: 3px solid $blue-10;
