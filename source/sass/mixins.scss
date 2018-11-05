@@ -25,6 +25,11 @@
   line-height: 24px;
 }
 
+@mixin main-font2 {
+  font-size: 14px;
+  line-height: 24px;
+}
+
 @mixin link-reset {
   text-decoration: none;
 }
