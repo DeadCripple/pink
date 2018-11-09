@@ -1,9 +1,11 @@
-.header__wrapper {
+.header {
+  width: 100%;
   position: absolute;
   z-index: 10;
-  box-sizing: border-box;
-  width: 100%;
-  padding: 0 20px;
+}
+
+.header__wrapper {
+  @include container;
   display: flex;
   align-items: center;
   justify-content: space-between;
