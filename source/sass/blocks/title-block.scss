@@ -1,8 +1,18 @@
 .title-block {
-  margin: 45px auto;
+  margin: 0;
+  @include container;
+  padding-top: 55px;
+  padding-bottom: 55px;
   text-align: center;
   font-size: 14px;
   line-height: 30px;
   color: $main-color;
   background-color: $white;
+}
+
+@media (min-width: $tablet-width) {
+  .title-block {
+    padding-top: 95px;
+    padding-bottom: 75px;
+  }
 }

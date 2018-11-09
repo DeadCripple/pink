@@ -1,13 +1,11 @@
 .photo-block {
-  width: 100%;
+  margin-bottom: 20px;
 }
 
 .photo__wrapper {
   display: flex;
   flex-direction: column;
-  padding: 0 20px;
-  margin-bottom: 23px;
-  background-color: $gray;
+  @include container;
 }
 
 .photo-block--best {
@@ -16,18 +14,13 @@
 
 .photo-block__full-size {
   display: block;
-  margin: 0 -20px;
   line-height: 0;
-}
-
-.photo-block__full-size--best {
-  margin: 0 -40px;
 }
 
 .photo-block__caption-text {
   position: absolute;
   top: 0;
-  right: -20px;
+  right: 20px;
   display: block;
   width: 140px;
   padding-top: 6px;
@@ -42,9 +35,15 @@
   color: $white;
 }
 
+.photo-block__comment {
+  display: flex;
+  flex-direction: column;
+  padding: 23px 20px;
+  background-color: $gray;
+}
+
 .photo-block__username {
-  margin-top: 20px;
-  margin-bottom: 0px;
+  margin: 0;
   @include main-font;
   font-weight: 700;
   color: $main-color;
@@ -59,9 +58,6 @@
 
 .photo-block__post {
   margin: 0;
-}
-
-.photo-block__post {
   @include main-font;
   color: $main-color;
 }
@@ -72,8 +68,48 @@
   line-height: 24px;
   color: $pink;
   font-weight: 400;
+  text-transform: uppercase;
 }
 
-.photo-block__likes {
-  margin-bottom: 25px;
+@media (min-width: $tablet-width) {
+  .photo-block--best .photo-block__comment {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  .photo-block__username {
+    order: 1;
+  }
+
+  .photo-block__post {
+    order: 3;
+    min-height: 48px;
+  }
+
+  .photo-block__likes {
+    order: 2;
+  }
+
+  .photo-block__comment {
+    padding: 30px 20px;
+  }
+
+  .photo__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+
+  .photo-block {
+    width: calc(50% - 10px);
+  }
+
+  .photo-block--best {
+    width: 100%;
+    margin-bottom: 50px;
+  }
 }
