@@ -145,57 +145,73 @@
         Выкладывайте все, что накопилось в телефоне!
       </p>
 
-      <article class="photo-editor">
-        <div class="container">
-          <div class="photo-editor__wrapper">
-            <form class="photo-editor__form" action="" method="post">
-              <div class="photo-editor__image">
-                <a class="photo-editor__full-size" href="">
-                  <img src="img/photo-7-mobile.jpg" alt="Фото пользователя">
-                </a>
-              </div>
-              <div class="photo-editor__tools">
-                <ul class="tools-list">
-                  <li class="tools-list__item tools-list__item--clip tools-list__icon--active">
-                    <span class="visually-hidden">Кадрирование</span>
-                  </li>
-                  <li class="tools-list__item tools-list__item--fill">
-                    <span class="visually-hidden">Заливка</span>
-                  </li>
-                  <li class="tools-list__item tools-list__item--contrast">
-                    <span class="visually-hidden">Контраст</span>
-                  </li>
-                  <li class="tools-list__range range-control range-control--clip">
+      <article class="photo__editor photo-editor">
+        <div class="photo-editor__wrapper">
+          <form class="photo-editor__form" action="" method="post">
+            <div class="photo-editor__image">
+              <a class="photo-editor__full-size" href="">
+                <img src="img/photo-7-mobile.jpg" alt="Фото пользователя">
+              </a>
+            </div>
+            <div class="photo-editor__tools">
+              <ul class="tools-list">
+                <li class="tools-list__item tools-list__item--clip tools-list__icon--active">
+                  <span class="visually-hidden">Кадрирование</span>
+                  <div class="tools-list__icon tools-list__icon--clip"></div>
+                  <div class="tools-list__range range-control">
                     <div class="range-control__scale">
                       <div class="range-control__toggle range-control__toggle--clip"></div>
                     </div>
-                  </li>
-                </ul>
-                <div class="photo-editor__buttons">
-                  <button class="photo-editor__button photo-editor__button--post button">Запостить</button>
-                  <button class="photo-editor__button photo-editor__button--cancel button">Отмена</button>
-                </div>
+                  </div>
+                </li>
+                <li class="tools-list__item tools-list__item--fill">
+                  <span class="visually-hidden">Заливка</span>
+                  <div class="tools-list__icon tools-list__icon--fill"></div>
+                  <div class="tools-list__range range-control">
+                    <div class="range-control__scale">
+                      <div class="range-control__toggle range-control__toggle--fill"></div>
+                    </div>
+                  </div>
+                </li>
+                <li class="tools-list__item tools-list__item--contrast">
+                  <span class="visually-hidden">Контраст</span>
+                  <div class="tools-list__icon tools-list__icon--contrast"></div>
+                  <div class="tools-list__range range-control">
+                    <div class="range-control__scale">
+                      <div class="range-control__toggle range-control__toggle--contrast"></div>
+                    </div>
+                  </div>
+                </li>
+                <li class="photo-editor__range range-control range-control--clip">
+                  <div class="range-control__scale">
+                    <div class="range-control__toggle range-control__toggle--clip"></div>
+                  </div>
+                </li>
+              </ul>
+              <div class="photo-editor__buttons">
+                <button class="photo-editor__button photo-editor__button--post button">Запостить</button>
+                <button class="photo-editor__button photo-editor__button--cancel button">Отмена</button>
               </div>
-            </form>
-          </div>
+            </div>
+          </form>
         </div>
       </article>
     </section>
   </main>
 
-  <footer class="page-footer page-footer--index">
+  <footer class="page-footer">
     <div class="page-footer__wrapper">
       <div class="page-footer__logo">
 
       </div>
-
       <ul class="page-footer__social social-block">
         <li class="social-block__item"></li>
         <li class="social-block__item"></li>
         <li class="social-block__item"></li>
       </ul>
       <div class="page-footer__copyright">
-        <span class="page-footer__copyright-text">Разработано</span> <a class="page-footer__copyright-link" href="https://htmlacademy.ru/">HTML Academy</a>
+        <span class="page-footer__copyright-text">Разработано</span> <a class="page-footer__copyright-link" href="https://htmlacademy.ru/">HTML
+          Academy</a>
       </div>
     </div>
   </footer>
