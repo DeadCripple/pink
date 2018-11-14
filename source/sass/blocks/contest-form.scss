@@ -1,10 +1,11 @@
-.contest-form {
+.contest-form__wrapper {
+  @include container;
   display: flex;
   flex-direction: column;
 }
 
 .contest-form__title-block {
-  margin-top: 40px;
+  margin-top: 45px;
   margin-bottom: 20px;
   font-size: 14px;
   line-height: 30px;
@@ -16,19 +17,29 @@
   display: none;
 }
 
-.contest-form__name-block {
+.contest-form__set {
   display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.contest-form__row {
+  display: flex;
+  flex-direction: row;
+}
+
+.contest-form__row--name,
+.contest-form__row--contacts {
   flex-direction: column;
 }
 
 .contest-form__input {
-  padding: 20px;
-  margin-bottom: 5px;
+  padding: 15px;
   border: 2px solid $gray;
-}
-
-.contest-form__input:last-child {
-  margin-bottom: 42px;
+  @include form-main-font;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .contest-form__input-name {
@@ -50,24 +61,29 @@
   color: $pink;
 }
 
-.contest-form__achievements {
+.contest-form__set--achievements {
   display: flex;
   flex-direction: column;
   width: 100%;
   margin: 0 -20px;
-  margin-bottom: 10px;
-  padding: 35px 20px 42px;
+  padding: 55px 20px 0px;
   background-color: $gray;
 }
 
-.contest-form__contacts {
+.contest-form__set--contacts {
   display: flex;
   flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.contest-form__set--contacts .contest-form__titling {
+  display: none;
 }
 
 .contest-form__checkbox-name {
-  margin-bottom: 55px;
-  padding-left: 55px;
+  margin-bottom: 52px;
+  padding-left: 68px;
   @include form-main-font;
   color: $main-color;
   &:last-child {
@@ -75,12 +91,17 @@
   }
 }
 
-.contest-form__apps {
+.contest-form__checkbox {
+  @include visually-hidden;
+}
+
+.fields__set--apps {
   display: flex;
   flex-direction: column;
   margin: 0 -20px;
   margin-bottom: 50px;
   padding: 20px 20px;
+  padding-top: 25px;
   background-color: $gray;
 }
 
@@ -101,7 +122,7 @@
   color: $main-color;
 }
 
-.contest-form__comment {
+.contest-form__set--comment {
   display: flex;
   flex-direction: column;
   @include form-main-font;
@@ -147,4 +168,136 @@
 
 .contest-form__star {
   color: $pink;
+}
+
+@media (min-width: $tablet-width) {
+  .contest-form__set {
+    margin-bottom: 60px;
+    border: 2px solid $gray;
+    box-sizing: border-box;
+  }
+
+  .contest-form__set--name {
+    order: 1;
+    border: none;
+  }
+
+  .contest-form__set--achievements {
+    order: 4;
+  }
+
+  .contest-form__set--contacts {
+    order: 3;
+  }
+
+  .contest-form__set--apps {
+    order: 2;
+  }
+
+  .contest-form__set--comment {
+    order: 5;
+  }
+
+  .contest-form__set--submit-block {
+    order: 6;
+    flex-direction: row;
+    border: none;
+  }
+
+  .contest-form__input-name {
+    margin-left: 0;
+  }
+
+  .contest-form__row--name {
+    flex-direction: row;
+    margin-bottom: 50px;
+  }
+
+  .contest-form__row--name:last-child {
+    margin-bottom: 0;
+  }
+
+  .contest-form__set--achievements,
+  .contest-form__set--apps {
+    margin-right: 0;
+    margin-left: 0;
+    background-color: $white;
+  }
+
+  .contest-form__title-block {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+  .contest-form__set--submit-block {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  .contest-form__submit {
+    width: 300px;
+  }
+
+  .contest-form__titling {
+    position: absolute;
+    top: -10px;
+    padding-left: 33px;
+    padding-right: 33px;
+    background-color: white;
+  }
+
+  .contest-form__set--apps .contest-form__titling {
+    left: 20%;
+  }
+
+  .contest-form__set--contacts .contest-form__titling {
+    left: 30%;
+    display: block;
+  }
+
+  .contest-form__set--achievements .contest-form__titling {
+    left: 15%;
+  }
+
+  .contest-form__set--comment .contest-form__titling {
+    left: 30%;
+  }
+
+  .contest-form__wrapper > div {
+    padding: 50px;
+    box-sizing: border-box;
+  }
+
+  .contest-form__wrapper .contest-form__set--achievements {
+    padding-bottom: 0;
+  }
+
+  .contest-form__wrapper .contest-form__set--name,
+  .contest-form__wrapper .contest-form__set--submit-block {
+    padding: 0;
+  }
+
+  .contest-form__wrapper .contest-form__set--submit-block {
+    margin-bottom: 0;
+  }
+
+  .contest-form__text {
+    height: 150px;
+    margin: 0;
+  }
+
+  .contest-form__checkbox-name:last-child {
+    margin-bottom: 0;
+  }
+
+  .contest-form__set--contacts .contest-form__input-name {
+    order: 2;
+    margin-left: 20px;
+  }
+
+  .contest-form__set--contacts .contest-form__input {
+    order: 1;
+  }
 }

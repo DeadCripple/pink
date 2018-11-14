@@ -23,6 +23,11 @@
   text-align: center;
 }
 
+.head-block__title--form {
+  width: 85%;
+  margin-bottom: 55px;
+}
+
 @media (min-width: $tablet-width) {
   .head-block {
     background: no-repeat url("../img/bg-back-tablet@2x.jpg");
