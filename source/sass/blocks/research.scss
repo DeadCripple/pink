@@ -1,7 +1,9 @@
 .research__wrapper {
   display: none;
   justify-content: space-between;
-  padding: 60px 20px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include container;
 }
 
 .research__timer-block {

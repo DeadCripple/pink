@@ -1,5 +1,5 @@
 .reivew-slider__wrapper {
-  padding: 0 20px;
+  @include container;
   background-color: $white;
 }
 
