@@ -48,9 +48,14 @@
 
 @mixin container {
   min-width: 280px;
-  max-width: 920px;
+  max-width: 940px;
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }

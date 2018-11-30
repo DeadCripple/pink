@@ -90,3 +90,13 @@
     width: 90%;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .photo-editor {
+    background-color: $white;
+  }
+
+  .photo-editor__wrapper {
+    background-color: $gray;
+  }
+}

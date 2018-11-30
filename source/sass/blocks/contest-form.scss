@@ -4,15 +4,6 @@
   flex-direction: column;
 }
 
-.contest-form__title-block {
-  margin-top: 45px;
-  margin-bottom: 20px;
-  font-size: 14px;
-  line-height: 30px;
-  color: $main-color;
-  text-align: center;
-}
-
 .contest-form__plea {
   display: none;
 }
@@ -224,11 +215,6 @@
     background-color: $white;
   }
 
-  .contest-form__title-block {
-    margin-top: 100px;
-    margin-bottom: 100px;
-  }
-
   .contest-form__set--submit-block {
     display: flex;
     flex-direction: row;
@@ -299,5 +285,51 @@
 
   .contest-form__set--contacts .contest-form__input {
     order: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contest-form__wrapper,
+  .contest-form__set--achievements {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .contest-form__set--name,
+  .contest-form__set--apps {
+    width: 432px;
+    min-height: 300px;
+  }
+
+  .contest-form__set--contacts {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .contest-form__row--contacts {
+    width: 375px;
+  }
+
+  .contest-form__set--comment,
+  .contest-form__set--submit-block {
+    width: 100%;
+  }
+
+  .contest-form__set--apps .contest-form__titling {
+    left: 5%;
+  }
+
+  .contest-form__set--achievements .contest-form__titling {
+    left: 25%;
+  }
+
+  .contest-form__set--contacts .contest-form__titling {
+    left: 35%;
+  }
+
+  .contest-form__set--comment .contest-form__titling {
+    left: 35%;
   }
 }

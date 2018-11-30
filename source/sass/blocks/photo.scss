@@ -113,3 +113,9 @@
     margin-bottom: 50px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .photo-block {
+    width: calc(33% - 10px);
+  }
+}

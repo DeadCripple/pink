@@ -1,3 +1,7 @@
+.research {
+  background-color: $white;
+}
+
 .research__wrapper {
   display: none;
   justify-content: space-between;
@@ -44,5 +48,11 @@
 
   .research__effect {
     width: 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .research {
+    background-color: $gray;
   }
 }
