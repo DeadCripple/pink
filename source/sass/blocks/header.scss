@@ -5,6 +5,10 @@
   background-color: $black-30;
 }
 
+.header--nojs {
+  position: relative;
+}
+
 .header__wrapper {
   @include container;
   display: flex;
@@ -16,9 +20,6 @@
   @include visually-hidden;
 }
 
-.header__logo {
-  display: block;
-  width: 150px;
-  min-height: 25px;
+.header__main-nav {
+  margin: 0 -20px;
 }
-

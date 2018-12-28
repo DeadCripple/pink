@@ -1,0 +1,14 @@
+.master-logo {
+  display: block;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.master-logo__icon--mobile:hover .master-logo__icon-path {
+  fill: $pink;
+}
+
+.master-logo__icon--mobile:active .master-logo__icon-path {
+  opacity: 0.3;
+}
