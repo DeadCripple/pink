@@ -25,12 +25,29 @@
   flex-direction: column;
 }
 
+.contest-form__row--apps,
+.contest-form__row--achievements {
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 60px;
+}
+
 .contest-form__input {
   padding: 15px;
   border: 2px solid $gray;
   @include form-main-font;
   box-sizing: border-box;
   width: 100%;
+
+  &:hover {
+    border-color: $main-color;
+  }
+
+  &:focus {
+    border-color: $pink;
+    outline: none;
+  }
 }
 
 .contest-form__input-name {
@@ -72,18 +89,46 @@
   display: none;
 }
 
+.contest-form__checkbox {
+  display: none;
+}
+
 .contest-form__checkbox-name {
   margin-bottom: 52px;
-  padding-left: 68px;
   @include form-main-font;
   color: $main-color;
+
   &:last-child {
     margin-bottom: 0px;
   }
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
-.contest-form__checkbox {
-  @include visually-hidden;
+.contest-form__checkbox-name::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 28px;
+  width: 37px;
+  height: 37px;
+  border: 2px solid #e5e5e5;
+  background-color: #fff;
+}
+
+.contest-form__checkbox-name:hover::before {
+  border-color: $main-color;
+}
+
+.contest-form__checkbox-name:active::before {
+  border-color: $pink;
+}
+
+input:checked + .contest-form__checkbox-name::before {
+  background: no-repeat center url(../img/icon-check.svg);
+  background-color: #fff;
 }
 
 .fields__set--apps {
@@ -106,11 +151,51 @@
   color: $pink;
 }
 
+.contest-form__radio {
+  display: none
+}
+
+.contest-form__radio-name::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 35px;
+  height: 35px;
+  top: 18px;
+  left: 0;
+  background-color: #fff;
+  border: 2px solid $gray;
+  border-radius: 50%;
+}
+
+.contest-form__radio-name:hover::before {
+  border-color: $main-color;
+}
+
+.contest-form__radio-name:active::before {
+  border-color: $pink;
+}
+
+input:checked + .contest-form__radio-name::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 15px;
+  height: 15px;
+  top: 62px;
+  left: 12px;
+  background-color: $pink;
+  border-radius: 50%;
+}
+
 .contest-form__radio-name {
   margin: 20px 0;
-  padding-left: 60px;
   @include form-main-font;
   color: $main-color;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .contest-form__set--comment {
@@ -147,6 +232,23 @@
   @include form-main-font;
   text-transform: uppercase;
   color: $white;
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color:rgba(255,255,255,.3);
+  }
+}
+
+.contest-form__submit--disabled {
+  background-color: #e5e5e5;
+  cursor: not-allowed;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
 }
 
 .contest-form__legend {
@@ -201,6 +303,7 @@
 
   .contest-form__row--name {
     flex-direction: row;
+    position: relative;
     margin-bottom: 50px;
   }
 
@@ -272,10 +375,6 @@
   .contest-form__text {
     height: 150px;
     margin: 0;
-  }
-
-  .contest-form__checkbox-name:last-child {
-    margin-bottom: 0;
   }
 
   .contest-form__set--contacts .contest-form__input-name {

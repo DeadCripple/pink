@@ -13,10 +13,20 @@
   border: 0;
   width: 6px;
   height: 6px;
-  background-color: #b7babe;
+  background-color: $main-color;
+  opacity: 0.3;
   line-height: 0px;
   font-size: 0px;
   cursor: pointer;
+
+  &:hover {
+    background-color: $main-color;
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }
 
 .slider-toggle__button--active {
@@ -24,4 +34,9 @@
   width: 12px;
   height: 12px;
   background-color: $gray;
+
+  &:hover {
+    background-color: $gray;
+    opacity: 0.3;
+  }
 }

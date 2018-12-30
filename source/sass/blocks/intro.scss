@@ -27,6 +27,16 @@
   margin-bottom: 30px;
   color: $white;
   border-color: $white;
+
+  &:hover {
+    background-color: $white;
+    color: $pink;
+    border-color: $white;
+  }
+
+  &:active {
+    color: $pink-30;
+  }
 }
 
 .intro__application {

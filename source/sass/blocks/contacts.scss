@@ -39,6 +39,23 @@
   text-decoration: none;
 }
 
+.contacts__phone,
+.contacts__email {
+  &:hover {
+    color: $main-color;
+    text-decoration: underline;
+  }
+
+  &:active {
+    opacity: 0.3;
+    text-decoration: none;
+  }
+}
+
+.contacts__address:hover {
+  cursor: default;
+}
+
 @media (min-width: $tablet-width) {
   .contacts__wrapper {
     display: flex;
