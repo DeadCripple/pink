@@ -49,5 +49,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  width: 87%;
+  .tools-list {
+    width: 87%;
+  }
 }

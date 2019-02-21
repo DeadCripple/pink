@@ -37,3 +37,9 @@
     width: 73%;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .range-control {
+    width: 77%;
+  }
+}
