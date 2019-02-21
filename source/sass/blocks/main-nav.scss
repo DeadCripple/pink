@@ -15,6 +15,7 @@
   padding: 0;
   font-size: 0;
   background-color: transparent;
+
   &:hover {
     cursor: pointer;
   }
@@ -66,8 +67,8 @@
 
 .main-nav__link {
   display: block;
-  padding-top: 18px;
-  padding-bottom: 18px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   @include ttl-font;
   text-align: center;
   line-height: 32px;
@@ -94,6 +95,7 @@
   border-top: 2px solid #181722;
   opacity: 0.7;
   background-color: #23303f;
+
   &:hover {
     color: $white;
     border-top: 2px solid #181722;
@@ -103,15 +105,26 @@
 }
 
 .main-nav__logo {
+  height: 66px;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 20px;
   box-sizing: border-box;
-  height: 66px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav__toggle {
+    top: 20px;
+  }
+
+  .main-nav__logo {
+    height: 105px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .main-nav {
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -119,13 +132,15 @@
   }
 
   .main-nav__link {
-    border: none;
     padding: 40px 37px;
     text-transform: none;
     font-weight: 400;
+    border: none;
+
     &:hover {
       border: none;
     }
+
     &:active {
       background-color: transparent;
       color: #fff;
@@ -137,6 +152,7 @@
     position: relative;
     opacity: 1;
     background: transparent;
+
     &:active {
       opacity: 1;
     }
@@ -153,8 +169,10 @@
   }
 
   .main-nav__list {
+    width: 70%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .main-nav__toggle {

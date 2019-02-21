@@ -55,4 +55,16 @@
   .research {
     background-color: $gray;
   }
+
+  .research__header br {
+    display: none;
+  }
+
+  .reivew-slider__autor {
+    font-size: 24px;
+  }
+
+  .reivew-slider__caption {
+    font-size: 18px;
+  }
 }

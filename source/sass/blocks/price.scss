@@ -1,5 +1,5 @@
 .price {
-  padding-top: 200px;
+  padding-top: 80px;
   background-image: url(../img/bg-triangle-white.svg);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -15,7 +15,7 @@
 }
 
 .price__list {
-  min-height: 270px;
+  border-collapse: collapse;
 }
 
 .price__version {
@@ -30,7 +30,23 @@
 }
 
 .price__version-block {
+  position: relative;
+  padding-top: 25px;
+  padding-bottom: 25px;
   background-color: $main-color;
+  text-align: center;
+}
+
+.price__flag {
+  position: absolute;
+  left: -1px;
+  top: 0;
+  width: 73px;
+  height: 73px;
+}
+
+.price__flag--hit {
+  background: no-repeat center url(../img/hit-flag.png);
 }
 
 .price__option {
@@ -40,16 +56,40 @@
 }
 
 .price__option-block {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  padding-left: 25px;
   background-color: $white;
+  border: 1px solid $gray;
+}
+
+.price__check-mark {
+  max-width: 29px;
+  max-height: 29px;
 }
 
 .price__radio-buttons {
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin-top: 35px;
+  margin-bottom: 35px;
 }
 
 @media (min-width: $tablet-width) {
-.price__radio-buttons {
-  display: none;
+  .price__radio-buttons {
+    display: none;
+  }
+
+  .price__version {
+    font-size: 16px;
+  }
+
+  .price__value {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .price__option {
+    font-size: 18px;
   }
 }

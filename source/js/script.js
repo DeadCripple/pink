@@ -2,6 +2,7 @@ var mainNavToggle = document.querySelector('.main-nav__toggle');
 var header = document.querySelector('.header');
 var mainNav = document.querySelector('.main-nav');
 var mainNavList = document.querySelector('.main-nav__list');
+var headBlock = document.querySelector('.head-block');
 
 header.classList.remove('header--nojs');
 mainNavToggle.classList.remove('main-nav__toggle--nojs');
@@ -15,11 +16,15 @@ mainNavToggle.addEventListener('click', function () {
     mainNavToggle.classList.add('main-nav__toggle--opened');
     mainNav.style.backgroundColor = '#293646';
     header.style.position = 'relative';
+    headBlock.style.paddingTop = '25px';
   } else {
     mainNavToggle.classList.remove('main-nav__toggle--opened');
     mainNavToggle.classList.add('main-nav__toggle--closed');
     mainNavList.classList.add('main-nav__list--closed');
     mainNav.style.backgroundColor = 'transparent';
     header.style.position = 'absolute';
+    headBlock.style.paddingTop = '125px';
   }
 });
+
+headBlock.style.paddingTop = '125px';

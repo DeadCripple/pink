@@ -99,4 +99,27 @@
   .photo-editor__wrapper {
     background-color: $gray;
   }
+
+  .photo-editor__image {
+    width: 32%;
+    margin-left: 80px;
+  }
+
+  .photo-editor__tools {
+    width: 48%;
+    margin-right: 40px;
+  }
+
+  .photo-editor__buttons {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .photo-editor__button {
+    width: 45%;
+  }
+
+  .photo-editor__button--post {
+    margin-bottom: 0;
+  }
 }

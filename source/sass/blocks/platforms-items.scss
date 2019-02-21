@@ -1,8 +1,10 @@
 .platforms-items {
   display: flex;
+  width: 215px;
   min-height: 56px;
   justify-content: space-around;
   align-items: center;
+  @include list-reset;
 }
 
 .platforms-items__item {
@@ -12,12 +14,5 @@
   background-position: 0px 0px;
   border: 1px solid gray;
   text-indent: -99999px;
-}
-
-.platforms-items__desc {
-  @include main-font;
-  font-weight: 300;
-  color: $white;
-  width: 280px;
-  text-align: center;
+  cursor: pointer;
 }

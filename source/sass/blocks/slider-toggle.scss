@@ -1,7 +1,7 @@
 .slider-toggle {
   display: flex;
   justify-content: space-around;
-  width: 140px;
+  width: 80px;
   height: 20px;
   margin: 0 auto;
   align-items: baseline;
@@ -34,6 +34,7 @@
   width: 12px;
   height: 12px;
   background-color: $gray;
+  opacity: 1;
 
   &:hover {
     background-color: $gray;

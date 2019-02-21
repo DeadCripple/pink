@@ -27,8 +27,8 @@
 }
 
 .promo__titling {
-  margin-top: 35px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 15px;
   display: block;
   @include ttl-font;
   color: $black;
@@ -42,7 +42,7 @@
 
 .promo__desk {
   margin: 0px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .promo__item-image {
@@ -78,10 +78,11 @@
   }
 
   .promo__item {
-    width: 26%;
+    width: 30%;
   }
 
   .promo__titling {
+    margin-top: 65px;
     font-size: 30px;
     line-height: 30px;
   }

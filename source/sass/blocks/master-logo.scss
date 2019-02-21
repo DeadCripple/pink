@@ -5,10 +5,40 @@
   }
 }
 
-.master-logo__icon--mobile:hover .master-logo__icon-path {
+.master-logo__icon:hover .master-logo__icon-path,
+.master-logo__icon:focus .master-logo__icon-path {
   fill: $pink;
 }
 
-.master-logo__icon--mobile:active .master-logo__icon-path {
+.master-logo__icon:active .master-logo__icon-path {
   opacity: 0.3;
+}
+
+
+.master-logo__icon {
+  display: none;
+}
+
+.master-logo__icon--mobile {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .master-logo__icon--mobile {
+    display: none;
+  }
+
+  .master-logo__icon--tablet {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .master-logo__icon--tablet {
+    display: none;
+  }
+
+  .master-logo__icon--desktop {
+    display: block;
+  }
 }

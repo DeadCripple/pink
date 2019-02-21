@@ -1,5 +1,7 @@
 .head-block {
   box-sizing: border-box;
+  padding-top: 25px;
+  padding-bottom: 85px;
   background: no-repeat url("../img/bg-back-mobile@2x.jpg");
   background-color: $main-color;
   background-position: 50% 0%;
@@ -11,13 +13,11 @@
   display: flex;
   flex-direction: column;
   @include container;
-  height: 235px;
 }
 
 .head-block__title {
   width: 65%;
-  margin: auto;
-  margin-bottom: 80px;
+  margin: 0 auto;
   @include big-ttl-font;
   color: $white;
   text-align: center;
@@ -30,17 +30,22 @@
 
 @media (min-width: $tablet-width) {
   .head-block {
+    padding-top: 105px;
     background: no-repeat url("../img/bg-back-tablet@2x.jpg");
-    background-size: 1200px auto;
-    background-position: 50% 15%;
-  }
-
-  .head-block__wrapper {
-    height: 440px;
+    background-size: 180% auto;
+    background-position: 50% 28%;
   }
 
   .head-block__title {
-    margin-bottom: 200px;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    font-size: 50px;
   }
 }
 
+@media (min-width: $desktop-width) {
+  .head-block__title {
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+}

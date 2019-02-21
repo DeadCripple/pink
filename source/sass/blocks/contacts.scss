@@ -9,7 +9,7 @@
 .contacts__wrapper {
   display: flex;
   flex-direction: column;
-  align-items: baseline;
+  align-items: center;
 }
 
 .contacts__header {
@@ -63,5 +63,18 @@
     flex-wrap: wrap;
     justify-content: center;
     background-color: $white;
+  }
+
+  .contacts__address br {
+    display: none;
+  }
+
+  .contacts__header {
+    font-size: 40px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .contacts__header {
+    font-size: 50px;
   }
 }

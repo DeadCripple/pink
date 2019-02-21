@@ -1,5 +1,5 @@
 .intro {
-  background: no-repeat center url("../img/bg-back-mobile@2x.jpg");
+  background: no-repeat center url("../img/bg-back-mobile@1x.jpg");
   background-position: 50% 23%;
   background-size: 1850px auto;
   background-color: $blue;
@@ -10,15 +10,16 @@
   width: auto;
   flex-direction: column;
   align-items: center;
-  padding-top: 137px;
+  padding-top: 100px;
 }
 
-.platforms-items {
-  @include list-reset;
-}
-
-.platforms-items__desc {
+.intro__desc {
   margin-bottom: 35px;
+  @include main-font;
+  font-weight: 300;
+  color: $white;
+  width: 280px;
+  text-align: center;
 }
 
 .intro__button {
@@ -27,6 +28,8 @@
   margin-bottom: 30px;
   color: $white;
   border-color: $white;
+  font-size: 18px;
+  line-height: 18px;
 
   &:hover {
     background-color: $white;
@@ -56,13 +59,14 @@
   color: white;
   font-size: 40px;
   font-weight: 300;
-  width: 210px;
+  width: 215px;
   margin-top: 0;
   margin-bottom: 32px;
 }
 
 .intro__image-block {
   margin-right: auto;
+  width: 81%;
 }
 
 .intro__image {
@@ -75,8 +79,18 @@
   text-align: center;
 }
 
+@media (min-width: 320px) and (min-resolution: 144dpi),
+(min-width: 320px) and (min-resolution: 1.5dppx) {
+  .intro {
+    background: no-repeat center url("../img/bg-back-mobile@2x.jpg");
+  }
+}
 
 @media (min-width: $tablet-width) {
+  .intro {
+    background: no-repeat center url("../img/bg-back-tablet@1x.jpg");
+  }
+
   .intro__wrapper {
     position: relative;
     flex-direction: row;
@@ -86,16 +100,74 @@
   .intro__image-block {
     order: 2;
     position: absolute;
-    left: 230px;
+    left: 180px;
+    width: 460px;
   }
 
   .intro__application {
     order: 1;
-    width: 300px;
+    width: 50%;
     background-color: transparent;
   }
 
   .intro__titling {
     display: block;
+  }
+
+  .intro__desc {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $tablet-width) and (min-resolution: 144dpi),
+(min-width: $tablet-width) and (min-resolution: 1.5dppx) {
+  .intro {
+    background: no-repeat center url("../img/bg-back-mobile@2x.jpg");
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .intro {
+    background: no-repeat center url("../img/bg-back-desktop@1x.jpg");
+  }
+
+  .intro__titling {
+    font-size: 50px;
+  }
+
+  .intro__button {
+    font-size: 18px;
+  }
+
+  .intro__wrapper {
+    padding-top: 220px;
+    padding-bottom: 85px;
+  }
+
+  .intro__application {
+    width: 45%;
+  }
+
+  .intro__button {
+    width: 58%;
+    margin-bottom: 65px;
+  }
+
+  .intro__image-block {
+    top: 208px;
+    left: 450px;
+    width: 600px;
+  }
+
+  .intro__desc {
+    width: 60%;
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: $desktop-width) and (min-resolution: 144dpi),
+(min-width: $desktop-width) and (min-resolution: 1.5dppx) {
+  .intro {
+    background: no-repeat center url("../img/bg-back-desktop@2x.jpg");
   }
 }
