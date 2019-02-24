@@ -11,3 +11,9 @@
     background-size: 100% auto;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .map-footer {
+    height: 475px;
+  }
+}

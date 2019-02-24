@@ -44,16 +44,30 @@
 @media (min-width: $tablet-width) {
   .research__wrapper {
     display: flex;
+    padding: 80px 20px;
   }
 
   .research__effect {
     width: 50%;
+  }
+
+  .reivew-slider__autor {
+    margin-bottom: 0;
+  }
+
+  .reivew-slider__radio-buttons {
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .research {
     background-color: $gray;
+  }
+
+  .research__wrapper {
+    padding: 52px 20px;
   }
 
   .research__header br {
@@ -65,6 +79,29 @@
   }
 
   .reivew-slider__caption {
+    font-size: 18px;
+  }
+
+  .research__timer {
+    width: 295px;
+    height: 345px;
+    background-size: 100% 100%;
+  }
+
+  .research__effect {
+    width: 61%;
+  }
+
+  .research__header {
+    margin-top: 90px;
+  }
+
+  .research__text {
+    margin-bottom: 45px;
+    font-size: 18px;
+  }
+
+  .research__link {
     font-size: 18px;
   }
 }

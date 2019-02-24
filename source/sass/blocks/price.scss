@@ -1,5 +1,4 @@
 .price {
-  padding-top: 80px;
   background-image: url(../img/bg-triangle-white.svg);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -12,6 +11,8 @@
   flex-direction: column;
   justify-content: flex-end;
   @include container;
+  padding-top: 80px;
+
 }
 
 .price__list {
@@ -91,5 +92,10 @@
 @media (min-width: $desktop-width) {
   .price__option {
     font-size: 18px;
+  }
+
+  .price__wrapper {
+    padding-top: 150px;
+    padding-bottom: 100px;
   }
 }

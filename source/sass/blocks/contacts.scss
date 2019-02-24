@@ -70,11 +70,30 @@
   }
 
   .contacts__header {
+    margin: 50px 0;
     font-size: 40px;
+  }
+
+  .contacts__item {
+    margin-bottom: 50px;
+  }
+
+  .contacts__item:last-child {
+    width: 250px;
   }
 }
 @media (min-width: $desktop-width) {
   .contacts__header {
+    margin-bottom: 70px;
     font-size: 50px;
+  }
+
+  .contacts__wrapper {
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .contacts__title {
+    margin-bottom: 30px;
   }
 }

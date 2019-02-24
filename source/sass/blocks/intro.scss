@@ -94,14 +94,15 @@
   .intro__wrapper {
     position: relative;
     flex-direction: row;
-    padding-bottom: 95px;
+    padding-bottom: 110px;
   }
 
   .intro__image-block {
+    width: 466px;
     order: 2;
     position: absolute;
-    left: 180px;
-    width: 460px;
+    left: 178px;
+    bottom: 0;
   }
 
   .intro__application {
@@ -112,9 +113,11 @@
 
   .intro__titling {
     display: block;
+    margin-bottom: 0;
   }
 
   .intro__desc {
+    margin-bottom: 0;
     font-size: 18px;
   }
 }
@@ -123,6 +126,7 @@
 (min-width: $tablet-width) and (min-resolution: 1.5dppx) {
   .intro {
     background: no-repeat center url("../img/bg-back-mobile@2x.jpg");
+    background-position: 50% 60%;
   }
 }
 
@@ -136,21 +140,19 @@
   }
 
   .intro__button {
+    width: 58%;
+    margin-top: 60px;
+    margin-bottom: 65px;
     font-size: 18px;
   }
 
   .intro__wrapper {
     padding-top: 220px;
-    padding-bottom: 85px;
+    padding-bottom: 122px;
   }
 
   .intro__application {
     width: 45%;
-  }
-
-  .intro__button {
-    width: 58%;
-    margin-bottom: 65px;
   }
 
   .intro__image-block {

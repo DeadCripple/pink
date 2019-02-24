@@ -16,6 +16,11 @@
   border-bottom: 1px solid white;
 }
 
+.title-block--form {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
 .title-block__part--index {
   margin: 0;
   @include big-ttl-font;
@@ -36,12 +41,27 @@
     font-size: 18px;
   }
 
+  .title-block--index {
+    width: 587px;
+    padding-top: 55px;
+    padding-bottom: 60px;
+  }
+
+  .title-block__part--index:nth-child(2) {
+    width: 340px;
+  }
+
   .title-block__part--index {
     font-size: 40px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .title-block--index {
+    width: 733px;
+    padding-bottom: 80px;
+  }
+
   .title-block__part--index {
     font-size: 50px;
     line-height: 60px;
@@ -51,6 +71,9 @@
     }
   }
 
+  .title-block__part--index:nth-child(2) {
+    width: 420px;
+  }
   .title-block__part br {
     display: block;
   }

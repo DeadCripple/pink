@@ -56,3 +56,22 @@
     font-size: 20px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .reivew-slider__wrapper {
+    padding-top: 190px;
+    padding-bottom: 40px;
+  }
+
+  .reivew-slider__comment {
+    width: 700px;
+  }
+
+  .reivew-slider__caption {
+    margin: 0;
+  }
+
+  .reivew-slider__radio-buttons {
+    display: none;
+  }
+}

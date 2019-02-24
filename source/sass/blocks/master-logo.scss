@@ -14,6 +14,13 @@
   opacity: 0.3;
 }
 
+.master-logo__icon--black .master-logo__icon-path {
+  fill: black;
+}
+
+.master-logo__icon--pink .master-logo__icon-path {
+  fill: $pink;
+}
 
 .master-logo__icon {
   display: none;
