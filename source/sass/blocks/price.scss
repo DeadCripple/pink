@@ -18,12 +18,13 @@
   margin-left: auto;
 }
 
-.price__list-head {
-  justify-content: right;
+.price__version-block,
+.price__option-block {
+  width: 86%;
 }
 
-.price__list .price__version-block {
-  width: 24.5%;
+.price__list-head {
+  justify-content: right;
 }
 
 .price__wrapper {
@@ -32,10 +33,12 @@
   justify-content: flex-end;
   @include container;
   padding-top: 80px;
-
+  overflow: hidden;
 }
 
 .price__list {
+  width: 300%;
+  transform: translateX(-33.3%);
   border-collapse: collapse;
 }
 
@@ -74,24 +77,27 @@
 
 .price__option {
   font-size: 14px;
+  line-height: 23px;
   color: $main-color;
 }
 
 .price__option-block {
   display: flex;
-  width: 24.5%;
   justify-content: space-between;
-  padding: 20px;
+  padding: 17px;
   padding-left: 25px;
   background-color: $white;
   border: 1px solid #e5e5e5;
+}
+
+.price__option-block--tab-and-desk {
+  display: none;
 }
 
 .price__check-mark {
   max-width: 29px;
   max-height: 29px;
   margin-left: auto;
-  margin-right: auto;
 }
 
 .price__radio-buttons {
@@ -100,6 +106,37 @@
 }
 
 @media (min-width: $tablet-width) {
+  .price__wrapper {
+    padding-bottom: 65px;
+  }
+
+  .price__list {
+    width: 100%;
+    transform: translateX(0);
+    border-collapse: collapse;
+  }
+
+  .price__version-block,
+  .price__option-block {
+    width: 24.5%;
+  }
+
+  .price__version-block {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .price__option-block {
+    padding: 10px 15px 10px 15px;
+  }
+
+  .price__option-block--tab-and-desk {
+    display: block;
+  }
+
+  .price__option--mobile {
+    display: none;
+  }
+
   .price__radio-buttons {
     display: none;
   }
@@ -111,6 +148,10 @@
   .price__value {
     font-size: 18px;
   }
+
+  .price__check-mark {
+    margin-right: auto;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -118,8 +159,18 @@
     font-size: 18px;
   }
 
+  .price__option-block {
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
+
   .price__wrapper {
     padding-top: 150px;
     padding-bottom: 100px;
+  }
+
+  .price__version-block {
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 }

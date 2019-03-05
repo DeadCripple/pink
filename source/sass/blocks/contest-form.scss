@@ -353,20 +353,24 @@ input:checked + .contest-form__radio-name::after {
   }
 
   .contest-form__set--apps .contest-form__titling {
-    left: 20%;
+    left: 50%;
+    margin-left: -191px;
   }
 
   .contest-form__set--contacts .contest-form__titling {
-    left: 30%;
+    left: 50%;
+    margin-left: -131px;
     display: block;
   }
 
   .contest-form__set--achievements .contest-form__titling {
-    left: 15%;
+    left: 50%;
+    margin-left: -188px;
   }
 
   .contest-form__set--comment .contest-form__titling {
-    left: 30%;
+    left: 50%;
+    margin-left: -124px;
   }
 
   .contest-form__wrapper > div {

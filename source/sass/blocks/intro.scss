@@ -83,6 +83,7 @@
 (min-width: 320px) and (min-resolution: 1.5dppx) {
   .intro {
     background: no-repeat center url("../img/bg-back-mobile@2x.jpg");
+    background-position: 50% 0%;
   }
 }
 
@@ -117,6 +118,8 @@
   }
 
   .intro__desc {
+    width: 300px;
+    margin-top: 40px;
     margin-bottom: 0;
     font-size: 18px;
   }
@@ -170,6 +173,6 @@
 @media (min-width: $desktop-width) and (min-resolution: 144dpi),
 (min-width: $desktop-width) and (min-resolution: 1.5dppx) {
   .intro {
-    background: no-repeat center url("../img/bg-back-desktop@2x.jpg");
+    background: no-repeat url("../img/bg-back-desktop@2x.jpg");
   }
 }
