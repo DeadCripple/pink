@@ -93,6 +93,18 @@
     align-items: flex-start;
   }
 
+  .contacts__item--call {
+    order: 1;
+  }
+
+  .contacts__item--write {
+    order: 3;
+  }
+
+  .contacts__item--come {
+    order: 2;
+  }
+
   .contacts__title {
     margin-bottom: 30px;
   }

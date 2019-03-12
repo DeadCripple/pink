@@ -27,6 +27,10 @@
   margin-bottom: 40px;
 }
 
+.page-footer--index {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .page-footer {
     display: block;
@@ -35,6 +39,10 @@
   .page-footer__wrapper {
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .page-footer--index {
+    display: block;
   }
 }
 

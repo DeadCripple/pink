@@ -160,7 +160,7 @@
 
   .intro__image-block {
     top: 208px;
-    left: 450px;
+    left: 36%;
     width: 600px;
   }
 
@@ -173,6 +173,7 @@
 @media (min-width: $desktop-width) and (min-resolution: 144dpi),
 (min-width: $desktop-width) and (min-resolution: 1.5dppx) {
   .intro {
-    background: no-repeat url("../img/bg-back-desktop@2x.jpg");
+    background: no-repeat center url(../img/bg-back-desktop@2x.jpg);
+    background-size: cover;
   }
 }

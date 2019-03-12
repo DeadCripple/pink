@@ -5,6 +5,14 @@
   }
 }
 
+.master-logo__icon-path--black {
+  fill: $main-color;
+}
+
+.master-logo__icon-path--pink {
+  fill: $pink;
+}
+
 .master-logo__icon:hover .master-logo__icon-path,
 .master-logo__icon:focus .master-logo__icon-path {
   fill: $pink;
@@ -12,14 +20,6 @@
 
 .master-logo__icon:active .master-logo__icon-path {
   opacity: 0.3;
-}
-
-.master-logo__icon--black .master-logo__icon-path {
-  fill: black;
-}
-
-.master-logo__icon--pink .master-logo__icon-path {
-  fill: $pink;
 }
 
 .master-logo__icon {
