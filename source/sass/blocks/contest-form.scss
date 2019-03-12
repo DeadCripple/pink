@@ -222,6 +222,7 @@ input:checked + .contest-form__radio-name::after {
   margin-top: -35px;
   margin-bottom: 30px;
   padding: 18px;
+  resize: none;
 
   &::placeholder {
     @include form-main-font;
@@ -440,19 +441,19 @@ input:checked + .contest-form__radio-name::after {
   }
 
   .contest-form__set--apps .contest-form__titling {
-    left: 5%;
+    left: 50%;
   }
 
   .contest-form__set--achievements .contest-form__titling {
-    left: 27%;
+    left: 46%;
   }
 
   .contest-form__set--contacts .contest-form__titling {
-    left: 36%;
+    left: 50%;
   }
 
   .contest-form__set--comment .contest-form__titling {
-    left: 36%;
+    left: 50%;
   }
 
   .contest-form__fill {
