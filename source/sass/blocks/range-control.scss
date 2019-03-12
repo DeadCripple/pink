@@ -18,6 +18,10 @@
   background-color: $white;
   cursor: pointer;
   top: -6px;
+
+  &:hover {
+    background-color: $pink;
+  }
 }
 
 .range-control__toggle--clip {

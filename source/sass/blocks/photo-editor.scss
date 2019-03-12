@@ -18,8 +18,19 @@
 }
 
 .photo-editor__button--post {
+  margin-bottom: 12px;
   border-color: $pink;
   color: $pink;
+
+    &:hover {
+      background-color: $pink;
+      color: #fff;
+    }
+
+    &:active {
+      color: #e08195;
+      background-color: $pink;
+    }
 }
 
 .photo-editor__tools {
@@ -43,12 +54,19 @@
   background-color: transparent;
 }
 
-.photo-editor__button--post {
-  margin-bottom: 12px;
-}
-
 .photo-editor__button--cancel {
   color: #dddfe0;
+
+    &:hover {
+      border-color: #b5b9be;
+      color: #b5b9be;
+    }
+
+    &:active {
+      border-color: #b5b9be;
+      background-color: #b5b9be;
+      color: #cbced2;
+    }
 }
 
 .photo-editor__button {
