@@ -21,6 +21,31 @@
   line-height: 18px;
 }
 
+.page-footer__copyright-link {
+  display: inline-block;
+  vertical-align: middle;
+  fill: #d22856;
+}
+
+.page-footer__copyright-link:hover .page-footer__htmlacademy-logo {
+  fill: #283645;
+}
+
+.page-footer__copyright-link:active .page-footer__htmlacademy-logo {
+  opacity: 0.3;
+}
+
+.page-footer__htmlacademy-logo {
+  display: inline-block;
+}
+
+.page-footer__copyright-text {
+  display: inline-block;
+  margin-right: 5px;
+  font-size: 18px;
+  line-height: 18px;
+}
+
 .page-footer__logo,
 .page-footer__social,
 .page-footer__copyright {

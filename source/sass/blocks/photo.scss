@@ -72,13 +72,33 @@
   padding-bottom: 45px;
 }
 
+.photo-block__likes {
+  display: flex;
+  width: 130px;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .photo-block__like-text {
-  margin-left: 10px;
+  min-width: 100px;
   font-size: 12px;
   line-height: 24px;
   color: $pink;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+.photo-block__like-button {
+  width: 16px;
+  height: 16px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.photo-block__like-icon {
+  display: block;
 }
 
 @media (min-width: $tablet-width) {
@@ -99,6 +119,8 @@
   }
 
   .photo-block__likes {
+    width: 100%;
+    flex-direction: row-reverse;
     order: 3;
   }
 
@@ -123,6 +145,19 @@
     margin-bottom: 50px;
   }
 
+  .photo-block--best .photo-block__username {
+    order: 1;
+  }
+
+  .photo-block--best .photo-block__likes {
+    order: 2;
+    width: 130px;
+  }
+
+  .photo-block--best .photo-block__post {
+    order: 3;
+  }
+
   .photo__title-block {
     width: 68%;
     padding-top: 95px;
@@ -142,10 +177,6 @@
   .photo-editor__tools {
     margin-top: -20px;
   }
-
-  .tools-list__item {
-    height: 72px;
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -160,10 +191,6 @@
 
   .photo__title-block--bottom {
     padding-top: 0;
-  }
-
-  .photo-block__caption-text {
-    right: 130px;
   }
 
   .photo-block--best {

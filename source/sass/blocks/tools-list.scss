@@ -19,8 +19,22 @@
   display: none;
 }
 
+.tools-list__icon {
+  display: block;
+  fill: $main-color;
+  opacity: 0.3;
+    &:hover {
+      opacity: 0.5;
+    }
+    &:active {
+      fill: $pink;
+      opacity: 1;
+    }
+}
+
 @media (min-width: $tablet-width) {
   .tools-list {
+    width: 87%;
     flex-direction: column;
     border-bottom: none;
   }
@@ -38,18 +52,5 @@
 
   .tools-list__range {
     display: block;
-  }
-
-  .tools-list__icon {
-    width: 24px;
-    height: 24px;
-    overflow: hidden;
-    display: inline-block;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .tools-list {
-    width: 87%;
   }
 }

@@ -2,17 +2,19 @@
   display: flex;
   width: 215px;
   min-height: 56px;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   @include list-reset;
 }
 
 .platforms-items__item {
-  height: 56px;
-  width: 55px;
   background: url("../img/sprite.svg");
   background-position: 0px 0px;
-  border: 1px solid gray;
   text-indent: -99999px;
   cursor: pointer;
+}
+
+.platforms-items__link,
+.platforms-items__link svg {
+  display: block;
 }

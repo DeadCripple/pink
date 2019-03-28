@@ -45,50 +45,11 @@
     margin-bottom: 90px;
     font-size: 50px;
   }
-
-  .title-block--form {
-    width: 500px;
-    padding-top: 90px;
-    padding-bottom: 80px;
-  }
-
-  .contest-form__plea {
-    display: block;
-  }
 }
 
 @media (min-width: $desktop-width) {
   .head-block__title--form {
     margin-top: 50px;
     margin-bottom: 105px;
-  }
-
-  .title-block--form {
-    display: block;
-    width: 756px;
-  }
-
-  .contest-form__plea {
-    display: inline;
-  }
-
-  .contest-form__radio-name::before {
-    left: 18px;
-  }
-
-  input:checked+.contest-form__radio-name::after {
-    left: 30px;
-  }
-
-  .contest-form__set--contacts {
-    padding-bottom: 0px;
-  }
-
-  .contest-form__set--achievements {
-    margin-bottom: 90px;
-  }
-
-  .contest-form__text {
-    height: 60px;
   }
 }

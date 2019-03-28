@@ -84,6 +84,11 @@ gulp.task("sprite", function () {
     .pipe(gulp.dest("build/img"));
 });
 
+// Удаление лишних SVG, которые уже находятся в sprite.svg
+gulp.task("clean-svg", function () {
+  return del("build/img/icon-*.svg");
+});
+
 // SVG INCLUDE IN HTML
 gulp.task("html", function () {
   return gulp.src("source/*.html")
@@ -121,6 +126,7 @@ gulp.task("build", function (done) {
     "style",
     "images",
     "sprite",
+    "clean-svg",
     "html",
     done
   );

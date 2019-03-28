@@ -40,6 +40,42 @@
   margin-bottom: 40px;
 }
 
+.reivew-slider__quotes-image {
+  display: none;
+  width: 79px;
+  height: 63px;
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  margin-left: -40px;
+}
+
+.reivew-slider__slider-arrow {
+  position: absolute;
+  top: 212px;
+  display: none;
+  width: 22px;
+  height: 42px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  opacity: 0.3;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+}
+
+.reivew-slider__slider-arrow svg {
+  display: block;
+  width: 22px;
+  height: 42px;
+}
+
 @media (min-width: $tablet-width) {
   .reivew-slider__caption {
     display: block;
@@ -59,6 +95,7 @@
 
 @media (min-width: $desktop-width) {
   .reivew-slider__wrapper {
+    position: relative;
     padding-top: 190px;
     padding-bottom: 40px;
   }
@@ -73,5 +110,18 @@
 
   .reivew-slider__radio-buttons {
     display: none;
+  }
+
+  .reivew-slider__slider-arrow--back {
+    left: 0;
+  }
+
+  .reivew-slider__slider-arrow--next {
+    right: 0;
+  }
+
+  .reivew-slider__quotes-image,
+  .reivew-slider__slider-arrow {
+    display: block;
   }
 }

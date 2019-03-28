@@ -25,6 +25,29 @@
   flex-direction: column;
 }
 
+.contest-form__row--contacts {
+  position: relative;
+}
+
+.contest-form__contacts-icon {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 63px;
+  height: 63px;
+  background-color: #e5e5e5;
+}
+
+.contest-form__contacts-icon svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
 .contest-form__row--apps {
   position: relative;
   padding-top: 0px;
@@ -133,7 +156,7 @@
 }
 
 input:checked + .contest-form__checkbox-name::before {
-  background: no-repeat center url(../img/icon-check.svg);
+  background: no-repeat center url(../img/check-icon.svg);
   background-color: #fff;
 }
 
@@ -404,10 +427,19 @@ input:checked + .contest-form__radio-name::after {
 
   .contest-form__set--contacts .contest-form__input {
     order: 1;
+    padding-right: 70px;
   }
 
   .contest-form__set--comment {
     margin-bottom: 80px;
+  }
+
+  .contest-form__plea {
+    display: block;
+  }
+
+  .contest-form__contacts-icon {
+    display: block;
   }
 }
 
@@ -466,5 +498,25 @@ input:checked + .contest-form__radio-name::after {
 
   .contest-form__wrapper .contest-form__set--comment {
     padding-bottom: 55px;
+  }
+
+  .contest-form__radio-name::before {
+    left: 18px;
+  }
+
+  input:checked+.contest-form__radio-name::after {
+    left: 30px;
+  }
+
+  .contest-form__set--contacts {
+    padding-bottom: 0px;
+  }
+
+  .contest-form__set--achievements {
+    margin-bottom: 90px;
+  }
+
+  .contest-form__text {
+    height: 60px;
   }
 }

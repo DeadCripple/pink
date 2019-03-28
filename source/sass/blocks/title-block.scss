@@ -54,12 +54,23 @@
   .title-block__part--index {
     font-size: 40px;
   }
+
+  .title-block--form {
+    width: 500px;
+    padding-top: 90px;
+    padding-bottom: 80px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .title-block--index {
     width: 733px;
     padding-bottom: 80px;
+  }
+
+  .title-block--form {
+    display: block;
+    width: 756px;
   }
 
   .title-block__part--index {
