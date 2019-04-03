@@ -1,19 +1,46 @@
 .map-footer {
+  position: relative;
   height: 200px;
-  background: no-repeat center url(../img/footer-map@x1.jpg);
+  background: no-repeat center url(../img/footer-map-mob.jpg);
   background-size: 100% auto;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: -1px;
+    top: -1px;
+    background: no-repeat url(../img/bg-triangle-white-footer.svg);
+    background-size: 100%;
+    height: 200px;
+    width: 100%;
+  }
+}
+
+#map {
+  width: 100%;
+  height: 100%;
 }
 
 @media (min-width: $tablet-width) {
   .map-footer {
     height: 380px;
-    background: no-repeat center url(../img/footer-map@x2.jpg);
+    background: no-repeat center url(../img/footer-map-tab-and-desk.jpg);
     background-size: 100% auto;
+
+    &::before {
+      height: 380px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .map-footer {
-    height: 475px;
+    min-height: 525px;
+
+    &::before {
+      height: 160px;
+    }
   }
 }

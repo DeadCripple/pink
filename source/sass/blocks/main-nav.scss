@@ -76,6 +76,7 @@
   color: $white;
   border-top: 1px solid #505762;
   border-bottom: 1px solid black;
+  outline: none;
 
   &:hover {
     color: $pink;
@@ -86,6 +87,10 @@
   &:active {
     color: $pink-30;
     background-color: #222f3e;
+  }
+
+  &:focus {
+    color: $pink;
   }
 }
 

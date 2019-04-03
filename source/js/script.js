@@ -28,3 +28,29 @@ mainNavToggle.addEventListener('click', function () {
 });
 
 headBlock.style.paddingTop = '125px';
+
+function initMap() {
+  var uluru = {
+    lat: 59.936474,
+    lng: 30.321221
+  };
+  var map = new google.maps.Map(
+    document.getElementById('map'), {
+      zoom: 18,
+      center: uluru,
+      disableDefaultUI: true,
+      zoomControl: true
+    });
+  var marker = new google.maps.Marker({
+    position: uluru,
+    map: map,
+    icon: {
+      path: google.maps.SymbolPath.CIRCLE,
+      scale: 13,
+      fillOpacity: 100,
+      fillColor: '#d22856',
+      strokeWeight: 10,
+      strokeColor: 'white'
+    }
+  });
+}

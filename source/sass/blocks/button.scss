@@ -10,4 +10,11 @@
   font-weight: 700;
   text-decoration: none;
   text-align: center;
+  transition: all 0.2s;
+  outline: none;
+
+  &:focus {
+    box-shadow: 0 0 0 3px $pink,
+    0 0 0 1.5px $pink;
+  }
 }

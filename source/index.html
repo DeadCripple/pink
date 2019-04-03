@@ -5,7 +5,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Пинк</title>
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
   <link href="css/style.min.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="img/favicon.png">
 </head>
 
 <body class="index">
@@ -361,7 +363,11 @@
         </div>
       </div>
     </section>
-    <article class="footer__map map-footer"></article>
+    <article class="footer__map map-footer">
+      <div id="map">
+        <h3 class="visually-hidden">Как проехать</h3>
+      </div>
+    </article>
   </footer>
   <footer class="page-footer page-footer--index">
     <div class="page-footer__wrapper">
@@ -487,6 +493,9 @@
     </div>
   </footer>
   <script src="js/script.js"></script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCui7WXzk-zZYfUqO7kSs25bJ7ARiDx2i8&callback=initMap">
+  </script>
 </body>
 
 </html>

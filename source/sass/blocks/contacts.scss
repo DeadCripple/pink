@@ -93,6 +93,10 @@
     align-items: flex-start;
   }
 
+  .contacts__item {
+    margin-bottom: 0;
+  }
+
   .contacts__item--call {
     order: 1;
   }

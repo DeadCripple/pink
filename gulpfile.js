@@ -73,6 +73,27 @@ gulp.task("images", function () {
     .pipe(gulp.dest("build/img"));
 });
 
+gulp.task('imagemin', function() {
+  gulp.src('./img/**/*')
+      .pipe(newer('./public/img/'))
+      .pipe(imagemin([
+          imageminJpegRecompress({
+              method: 'smallfry'
+          }),
+          imageminSvgo({
+              plugins: [
+                  {removeDimensions: true},
+                  {removeAttrs: true},
+                  {removeElementsByAttr: true},
+                  {removeStyleElement: true},
+                  {removeViewBox: false}
+              ]
+          })
+      ]))
+      .pipe(gulp.dest('./public/img/'))
+      .pipe(livereload())
+});
+
 
 // SVG SPRITE
 gulp.task("sprite", function () {
