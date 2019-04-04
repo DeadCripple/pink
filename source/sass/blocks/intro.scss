@@ -84,7 +84,8 @@
 (min-width: 320px) and (min-resolution: 1.5dppx) {
   .intro {
     background: no-repeat center url("../img/bg-back-mobile@2x.jpg");
-    background-position: 50% 0%;
+    background-position: 50% -80px;
+    background-size: auto 75%;
   }
 }
 
@@ -97,13 +98,14 @@
     position: relative;
     flex-direction: row;
     padding-bottom: 110px;
+    padding-top: 140px;
   }
 
   .intro__image-block {
     width: 466px;
     order: 2;
     position: absolute;
-    left: 178px;
+    left: 25%;
     bottom: 0;
   }
 
@@ -116,6 +118,10 @@
   .intro__titling {
     display: block;
     margin-bottom: 0;
+  }
+
+  .intro__button {
+    width: 300px;
   }
 
   .intro__desc {
@@ -141,32 +147,35 @@
 
   .intro__titling {
     font-size: 50px;
+    width: 240px;
   }
 
   .intro__button {
-    width: 58%;
+    width: 300px;
     margin-top: 60px;
     margin-bottom: 65px;
     font-size: 18px;
   }
 
   .intro__wrapper {
+    height: 510px;
     padding-top: 220px;
     padding-bottom: 122px;
+    @include container;
   }
 
   .intro__application {
-    width: 45%;
+    width: 300px;
   }
 
   .intro__image-block {
-    top: 208px;
-    left: 36%;
+    bottom: 0;
+    left: 330px;
     width: 600px;
   }
 
   .intro__desc {
-    width: 60%;
+    width: 300px;
     margin-top: 50px;
   }
 }

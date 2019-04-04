@@ -29,6 +29,7 @@ mainNavToggle.addEventListener('click', function () {
 
 headBlock.style.paddingTop = '125px';
 
+
 function initMap() {
   var uluru = {
     lat: 59.936474,
