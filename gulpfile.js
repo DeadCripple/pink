@@ -13,7 +13,8 @@ var svgstore = require('gulp-svgstore');
 var posthtml = require("gulp-posthtml");
 var include = require('posthtml-include');
 var run = require("run-sequence"); // Позволяет ассинхронно запускать таски
-const del = require('del');
+var del = require('del');
+
 
 gulp.task("clean", function () {
   return del("build");
@@ -118,7 +119,6 @@ gulp.task("html", function () {
     ]))
     .pipe(gulp.dest("build"));
 });
-
 
 // LOCAL SERVER
 gulp.task("serve", function () {
